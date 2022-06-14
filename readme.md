@@ -1,6 +1,5 @@
-### Laravel Podcast is Laravel 5.5 web app that enables you to manage RSS feeds for your favorite podcasts and listen to the episodes in a seamless UI and User Authentication.
+### Podcast is Laravel 5.5 web app that enables you to manage RSS feeds for your favorite podcasts and listen to the episodes in a seamless UI and User Authentication.
 
-[![Build Status](https://travis-ci.org/jeremykenedy/laravel-podcast.svg?branch=master)](https://travis-ci.org/jeremykenedy/laravel-podcast)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 #### READY FOR USE!
@@ -8,32 +7,33 @@
 Built on Laravel 5.5, Bootstrap 3.6, and easily customizable with SASS. Change the entire theme with by the single color variable `$baseThemeColor` listed in `/resources/assets/sass/_variables.scss` and make it your customized version instantly. Includes form input validation, error handling, routing, ajax forms, configured gulpfile, and more.
 
 ###### A [Laravel](http://laravel.com/) 5.5.x with [Bootstrap](http://getbootstrap.com/) 3.6.x project.
-| Laravel Podcast Features  |
-| :------------ |
-|Automatically Pulls Podcasts Images, Titles, Dates, and Descriptions of episodes|
-|Mark your favorite episodes, accessible via the `podcasts/favorites` link|
-|New episodes published by podcasts are updated automatically|
-|Search for episodes from the title and description|
-|Mark all previous episodes in a podcast as read|
-|Mark episodes you have listened to as read|
-|Listen to Podcast and RSS Feeds|
-|Modals for action confirmation|
-|Download Podcast/RSS Episodes|
 
-| Built in Laravel Features  |
-| :------------ |
-|Uses [MySQL](https://github.com/mysql) Database and include migrations and seeds|
-|Uses [Artisan](http://laravel.com/docs/5.5/artisan) to manage database migration, schema creations, and create/publish page controller templates, and update schedules|
-|Dependencies are managed with [COMPOSER](https://getcomposer.org/)|
-|Laravel Scaffolding **User Authentication**|
+| Podcast Features                                                                 |
+| :------------------------------------------------------------------------------- |
+| Automatically Pulls Podcasts Images, Titles, Dates, and Descriptions of episodes |
+| Mark your favorite episodes, accessible via the `podcasts/favorites` link        |
+| New episodes published by podcasts are updated automatically                     |
+| Search for episodes from the title and description                               |
+| Mark all previous episodes in a podcast as read                                  |
+| Mark episodes you have listened to as read                                       |
+| Listen to Podcast and RSS Feeds                                                  |
+| Modals for action confirmation                                                   |
+| Download Podcast/RSS Episodes                                                    |
+
+| Built in Laravel Features                                                                                                                                              |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Uses [MySQL](https://github.com/mysql) Database and include migrations and seeds                                                                                       |
+| Uses [Artisan](http://laravel.com/docs/5.5/artisan) to manage database migration, schema creations, and create/publish page controller templates, and update schedules |
+| Dependencies are managed with [COMPOSER](https://getcomposer.org/)                                                                                                     |
+| Laravel Scaffolding **User Authentication**                                                                                                                            |
 
 ### Installation Instructions
 
-1. Run `sudo git clone https://github.com/jeremykenedy/laravel-podcast.git laravel-podcast`
+1. Run `sudo git clone https://github.com/intelliseawolf/podcast.git`
 2. Create a MySQL database for the project
-    * ```mysql -u root -p```, if using Vagrant: ```mysql -u homestead -psecret```
-    * ```create database laravelPodcast;```
-    * ```\q```
+   - `mysql -u root -p`, if using Vagrant: `mysql -u homestead -psecret`
+   - `create database laravelPodcast;`
+   - `\q`
 3. From the projects root run `cp .env.example .env`
 4. Run `sudo composer install` from the projects root folder
 5. From the projects root folder run `sudo php artisan key:generate`
@@ -43,40 +43,46 @@ Built on Laravel 5.5, Bootstrap 3.6, and easily customizable with SASS. Change t
 9. From the projects root folder run `sudo chmod -R ug+rwx storage bootstrap/cache`
 
 ##### Rebuild Front End Assets (optional)
+
 1. From the projects root folder run `sudo npm install`
 2. From the projects root folder run `sudo gulp`
 
 ##### Build Cache (optional)
+
 1. From the projects root folder run `sudo php artisan config:cache`
 
 #### View the Project in Browser
+
 1. From the projects root folder run `php artisan serve`
 2. Open your web browser and go to `http://localhost`
 
-* Manually update new episodes by navigating to route ```podcasts/auto-update```
+- Manually update new episodes by navigating to route `podcasts/auto-update`
 
 ###### Seeds
-1. Seeded Users
-   * Username: `Admin`
-   * E-mail: `jeremykenedy@gmail.com`
-   * Password: `password`
 
-### laravel-podcasts URL's (routes)
-* ```/```
-* ```/login```
-* ```/logout```
-* ```/register```
-* ```/password/reset```
-* ```/podcast```
-* ```/podcasts```
-* ```/podcast/search```
-* ```/podcasts/manage```
-* ```/podcasts/player```
-* ```/podcasts/settings```
-* ```/podcasts/favorites```
-* ```/podcasts/auto-update```
+1. Seeded Users
+   - Username: `Admin`
+   - E-mail: `admin@gmail.com`
+   - Password: `password`
+
+### podcasts URL's (routes)
+
+- `/`
+- `/login`
+- `/logout`
+- `/register`
+- `/password/reset`
+- `/podcast`
+- `/podcasts`
+- `/podcast/search`
+- `/podcasts/manage`
+- `/podcasts/player`
+- `/podcasts/settings`
+- `/podcasts/favorites`
+- `/podcasts/auto-update`
 
 ### Screenshots
+
 ![Home/Listen Page](https://s3-us-west-2.amazonaws.com/github-project-images/laravel-podcast/1-home.jpg)
 ![Manage Page](https://s3-us-west-2.amazonaws.com/github-project-images/laravel-podcast/2-manage.jpg)
 ![Favorites Page](https://s3-us-west-2.amazonaws.com/github-project-images/laravel-podcast/3-favorites.jpg)
@@ -88,7 +94,6 @@ Built on Laravel 5.5, Bootstrap 3.6, and easily customizable with SASS. Change t
 ![Add RSS Feed Modal](https://s3-us-west-2.amazonaws.com/github-project-images/laravel-podcast/9-modal-add.jpg)
 ![Delete RSS Feed Modal](https://s3-us-west-2.amazonaws.com/github-project-images/laravel-podcast/10-modal-delete.jpg)
 
-### Laravel Podcast License
-Laravel-Podcast is licensed under the MIT license. Enjoy!
+### Podcast License
 
-* Orignal Concepts from [Podcastwala Github Respository](https://github.com/modestkdr/Podcastwala)
+Podcast is licensed under the MIT license. Enjoy!
